@@ -5,7 +5,7 @@ import requests
 # Initialize Replicate client with your API token
 client = replicate.Client(api_token="000000000")  #  Replace with your real token
 
-# Open your input image
+# Replace the image to reference image 
 with open("face2.jpg", "rb") as image_file:  
     output = client.run(
         "black-forest-labs/flux-dev",
@@ -31,3 +31,4 @@ with open("generated_flux_image2.webp", "wb") as f:
     f.write(image_data)
 
 print("✅ Image saved as: generated_flux_image.webp")
+
